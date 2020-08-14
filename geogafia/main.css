@@ -1,0 +1,218 @@
+body {
+    background-image: url("imagenes/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    color: peachpuff;
+    font-size: 400%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0px 15px;
+    width: 55px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    border-radius: 32px;
+    float: left;
+}
+
+#gato5{
+    position: fixed;
+    bottom: 19%;
+    right: 24%;
+    width: 600px;
+    height: 680px;
+}
+
+#anaquel {
+    position: absolute;
+    top: 114px;
+    right: 2065px;
+    height: 32vh;
+    width: 25.5vw;
+    transition: transform .2s;
+}
+
+#anaquel:hover {
+    transform: scale(1.15);
+}
+
+#brasera{
+    position: absolute;
+    bottom: 225px;
+    left: 570px;
+    height: 73vh;
+    width: 21vw;
+    transition: transform .2s;
+}
+
+#brasera:hover {
+    transform: scale(1.04);
+}
+
+#cortina{
+    position: absolute;
+    top: 112px;
+    right: 635px;
+    height: 54vh;
+    width: 17vw;
+    transition: transform .2s;
+}
+
+#cortina:hover {
+    transform: scale(1.1);
+}
+
+#jarro {
+    position: absolute;
+    bottom: 768px;
+    right: 1907px;
+    height: 47vh;
+    width: 23vw;
+    transition: transform .2s;
+}
+
+#jarro:hover {
+    transform: scale(1.03);
+}
+
+#relog {
+    position: absolute;
+    top: 80px;
+    left: 1.5px;
+    height: 49vh;
+    width: 16.5vw;
+    transition: transform .2s;
+}
+
+#relog:hover {
+    transform: scale(1.04);
+}
+
+.area {
+    padding: 0;
+    text-align: center;
+}
+/*Health bar*/
+
+#healthbar {
+    width: 550px;
+    height: 250px;
+    right: 60px;
+    top: 16.5px;
+    position: absolute;
+}
+
+#progressBar {
+    top: 8px;
+    right: 60px;
+    position: absolute;
+    width: 54vw;
+    height: 35vh;
+}
+
+
+/*Parlante*/
+
+#speakeroff {
+    position: absolute;
+    left: 75px;
+    top: 75px;
+    z-index: 1;
+    size: 880px;
+}
+
+#speakeron {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    z-index: -1;
+    size: 880px;
+}
+
+
+/*Jumpscares*/
+
+#jumpscare {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+
+
+/*Preguntas*/
+
+#bloquePreg {
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    width: 60vw;
+    height: 32vh;
+    font-size: 60px;
+    text-align: center;
+    color: #ffe675;
+    background:rgb(255, 141, 48);
+    border: solid 10px indigo;
+    display: none;
+    z-index: 4;
+}
+
+.respuesta {
+    font-size: 55px;
+    background-color: rgb(221, 59, 135);
+    text-align: center;
+    justify-content: space-around;
+    display: inline-block;
+   
+}
+
+#respuestaA,
+#respuestaB,
+#respuestaC {
+    width: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 5px;
+    border-radius: 0;
+    margin-right: 50px;
+}
+
+
+/*Flecha win*/
+
+#flecha {
+    animation-name: flecha;
+    position: absolute;
+    bottom: 165px;
+    right: 30px;
+    width: 20vw;
+    height: 20vh;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: scale(1);
+    transition: 1s;
+    display: none;
+}
+
+@keyframes flecha {
+    0% {
+        transform: translate(0px, -20px) scale(0.8);
+    }
+    50% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0px, -20px) scale(0.8);
+    }
+}

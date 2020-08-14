@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat_eScape</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div>
+            <p onclick="jumpscare();"></p>
+            <img id="jumpscare" src="Imagenes/Karen.jpg" />
+            <audio id="scream" src="jumpscareAudio.mp3"></audio>
+            <div>
+                <audio id="alert" src="scream.mp3"></audio>
+            </div>
+        </div>
+        <div>
+            <audio id="horror" autoplay loop controls>
+        <source id="horror" src="Imagenes/HorrorAmbience.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+   
+                <div class="image-buttons">
+                    <img src="imagenes/5.png" id="gato5">
+                    <img src="imagenes/anaquel.png" id="anaquel" alt="anaquel" 
+                    class="clicker" onclick="activatePreg()">
+                    <img src="imagenes/brasera.png" id="brasera" alt="brasera" 
+                    class="clicker" onclick="activatePreg()">
+                    <img src="imagenes/cortina.png" id="cortina" alt="cortina"
+                    class="clicker" onclick="activatePreg()">
+                    <img src="imagenes/jarro.png" id="jarro"alt="jarro"
+                    class="clicker" onclick="activatePreg()">
+                    <img src="imagenes/relog.png" id="relog" alt="relog"
+                    class="clicker" onclick="activatePreg()">
+                </div>
+    <div id="controls">
+            <button id="playpause" title="play" onclick="pause()">
+        <img src="Imagenes/speakeron.png" alt="play" id="speakeron" style=" width: 150px; height: 150px;"></button>
+            <button id="pause" title="pause" onclick="pause()">
+         <img src="Imagenes/speakeroff.png" alt="pause" id="speakeroff" style=" width: 150px; height: 150px;">
+        </button>
+        </div>
+
+        <div>
+            <progress id="progressBar" value="3" max="3" style="width: 10vw; height: 11vh;"></progress>
+            <span id="status"></span>
+            <img src="Imagenes/healthbar.png" id="healthbar">
+    </div>            
+            <div id="bloquePreg">
+            <h1 id="preguntas"></h1>
+            <button onClick="validar('a')" id="respuestaA" class="respuesta"></button>
+            <button onClick="validar('b')" id="respuestaB" class="respuesta"></button>
+            <button onClick="validar('c')" id="respuestaC" class="respuesta"></button>
+            </div>          
+    </div>
+</div>
+<div>
+    <img src="Imagenes/flecha.png" id="flecha">
+</div>
+    <script  src= "main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+.cajas { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 50px;
+    height: 650px;
+    align-items: center;
+}
+
+/*-----paginas secundarias en grid--------*/
+
+.contenedor { 
+    display: grid;
+    grid-gap: 50px;
+    text-align: center;
+    height: 650px;
+}
+
+div > img { 
+    Position: center; 
+Width:100%;
+Height: 100%; Background-size: contain; 
+Background: no-repeat;
+}
+

@@ -1,0 +1,27 @@
+body{
+     background: cadetblue;
+ }
+ h1 {
+    text-align: center;
+    margin: 20%;
+ }
+.centrar{
+     text-align: center;
+     color: white;
+     background-color: black;
+     display: block;
+     position: relative;
+ }
+ nav{
+     position: absolute;
+     top: 80%;
+     right: 35%;
+ }
+ nav >a{
+    display: inline;
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+    margin: 2vw;
+    padding: 2vw;
+ } 
